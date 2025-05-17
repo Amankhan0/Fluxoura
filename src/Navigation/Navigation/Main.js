@@ -51,15 +51,22 @@ export default function Main() {
   const reduxSidebar = useSelector(state => state.SidebarReducer)
   const [localNav, setLocalNav] = useState(Links)
   const [path, setPath] = useState(Links)
+  const [render, setRender] = useState(null)
   const location = useLocation()
+
+  var theme = localStorage.getItem('theme')
 
   const handleSidebar = (value) => {
     dispatch(setSidebar(value))
   }
 
   useEffect(() => {
+    setRender(reduxSidebar.timestamp)
     setPath(location.pathname);
-  }, [location.pathname, reduxSidebar])
+  }, [location.pathname, reduxSidebar,theme,render])
+  
+  console.log('reduxSidebar.timestamp',reduxSidebar.timestamp);
+  
 
   return (
     <div>
@@ -68,7 +75,7 @@ export default function Main() {
           <div className="sidebar sidebar-panel print:hidden">
             <div className="flex h-full grow flex-col border-r border-slate-150 bg-white dark:border-navy-700 dark:bg-navy-750">
               <div className="flex justify-between px-3 pt-4 pb-2" style={{ borderBottom: '1px solid lightgrey' }}>
-                <img className={'w-[50%] h-[70%] self-center'} src={reduxSidebar.theme === 'light' ? logoWhite : logo} />
+                <img className={'w-[50%] h-[70%] self-center'} src={theme === 'light' ? logo : logoWhite} />
                 <button className="sidebar-toggle ml-0.5 flex h-7 w-7 flex-col justify-center space-y-1.5 text-primary outline-none focus:outline-none dark:text-accent-light/80" onClick={() => handleSidebar(reduxSidebar.doc === 'is-sidebar-open' ? '' : 'is-sidebar-open')}>
                   <span></span>
                   <span></span>
@@ -98,7 +105,7 @@ export default function Main() {
                   </button>
                 }
                 <div>
-                  <img className={window.innerWidth > 700 ? 'w-[15%]' : 'w-[30%]'} src={reduxSidebar.theme === 'light' ? logoWhite : logo} />
+                  <img className={window.innerWidth > 700 ? 'w-[15%]' : 'w-[30%]'} src={theme === 'light' ? logo : logoWhite} />
                 </div>
                 <div className="-mr-1.5 flex items-center space-x-2">
                   <div className='flex gap-10 text-lg'>
