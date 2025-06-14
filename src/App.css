@@ -10,7 +10,15 @@
 
 
 
-
+.marker-blue li::marker {
+  color: #2563EB; /* Tailwind's blue-600 */
+}
+.marker-orange li::marker {
+  color: #F97316; /* Tailwind's orange-500 */
+}
+.marker-yellow li::marker {
+  color: #EAB308; /* Tailwind's yellow-500 */
+}
 
 
 

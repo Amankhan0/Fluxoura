@@ -13,7 +13,6 @@ import SubscriptionReducer from './Store/Reducer/Subscription/SubscriptionReduce
 import PaginationReducer from './Store/Reducer/Pagination/PaginationReducer';
 import NavigationAndFormReducer from './Store/Reducer/NavigationAndFormReducer/NavigationAndFormReducer';
 
-
 const rootReducer = combineReducers({
   SampleReducer : SampleReducer,
   SidebarReducer : SidebarReducer,

@@ -63,15 +63,12 @@ export default function Main() {
   useEffect(() => {
     setRender(reduxSidebar.timestamp)
     setPath(location.pathname);
-  }, [location.pathname, reduxSidebar,theme,render])
-  
-  console.log('reduxSidebar.timestamp',reduxSidebar.timestamp);
-  
+  }, [location.pathname, reduxSidebar,theme,render])  
 
   return (
     <div>
       <div className={reduxSidebar?.doc}>
-        <div id="root" className="min-h-100vh flex grow bg-slate-50 dark:bg-navy-900 relative overflow-hidden" >
+        <div id="root" className="dark:text-white min-h-100vh flex grow bg-slate-50 dark:bg-navy-900 relative overflow-hidden" >
           <div className="sidebar sidebar-panel print:hidden">
             <div className="flex h-full grow flex-col border-r border-slate-150 bg-white dark:border-navy-700 dark:bg-navy-750">
               <div className="flex justify-between px-3 pt-4 pb-2" style={{ borderBottom: '1px solid lightgrey' }}>

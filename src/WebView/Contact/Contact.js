@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
     return (
-        <div className="p-10">
-            <section className="card dark:bg-gray-900 py-16 px-6">
+        <div className="p-10 dark:bg-gray-900">
+            <section className="card dark:bg-black py-16 px-6">
                 {/* Header Section */}
                 <div className="max-w-4xl mx-auto text-center">
                     <motion.h2
@@ -16,7 +16,7 @@ const Contact = () => {
                     >
                         Contact <span className="text-themeColor animate-pulse">Us</span>
                     </motion.h2>
-                    <p className="text-lg text-gray-700 dark:text-gray-300 mt-4">
+                    <p className="text-lg text-gray-700 dark:text-white mt-4">
                         Have questions or want to work together? Feel free to reach out!
                     </p>
                 </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                     >
                         <MapPin className="text-themeColor w-10 h-10 mx-auto" />
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-4">Visit Us</h3>
-                        <p className="text-gray-600 dark:text-gray-300 mt-2">
+                        <p className="text-gray-600 dark:text-white mt-2">
                             123 Creative Street, Design City, USA
                         </p>
                     </motion.div>
@@ -68,7 +68,7 @@ const Contact = () => {
 
                 {/* Footer */}
                 <div className="max-w-4xl mx-auto text-center mt-12">
-                    <p className="text-lg text-gray-700 dark:text-gray-300">
+                    <p className="text-lg text-gray-700 dark:text-white">
                         We're here to help! Reach out anytime, and let's create something amazing together.
                     </p>
                 </div>

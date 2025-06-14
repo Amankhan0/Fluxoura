@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const About = () => {
     return (
-        <div className="p-10">
-            <section className="card dark:bg-gray-900 py-16 px-6">
+        <div className="p-10 dark:black">
+            <section className="card dark:bg-black py-16 px-6">
                 {/* Hero Section */}
                 <div className="max-w-4xl mx-auto text-center">
                     <motion.h2
@@ -15,7 +15,7 @@ const About = () => {
                     >
                         About <span className="text-themeColor animate-pulse">Fluxoura</span>
                     </motion.h2>
-                    <p className="text-lg text-gray-700 dark:text-gray-300 mt-4">
+                    <p className="text-lg text-gray-700 dark:text-white mt-4">
                         We specialize in crafting stunning visual identities that make brands unforgettable.
                         With a passion for design and a commitment to excellence, we bring creativity and
                         strategy together to deliver compelling solutions across multiple platforms.
@@ -36,7 +36,7 @@ const About = () => {
                             whileHover={{ scale: 1.05 }}
                         >
                             <h3 className="text-xl font-semibold text-themeColor">{service.title}</h3>
-                            <p className="text-gray-600 dark:text-gray-300 mt-2">{service.desc}</p>
+                            <p className="text-gray-600 dark:text-white mt-2">{service.desc}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -44,7 +44,7 @@ const About = () => {
                 {/* Call to Action */}
                 <div className="max-w-4xl mx-auto text-center mt-12">
                     <motion.p
-                        className="text-lg text-gray-700 dark:text-gray-300"
+                        className="text-lg text-gray-700 dark:text-white"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
