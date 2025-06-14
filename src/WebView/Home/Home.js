@@ -1,5 +1,6 @@
 import React from "react";
 import VideoScrollAnimation from "./VideoScrollAnimation";
+import OurWork from "../SomeWork/SomeWork";
 
 const Home = () => {
   return (
@@ -39,7 +40,7 @@ const Home = () => {
         <div className="mb-10 lg:mb-0">
           <p className="text-base sm:text-lg mb-4">Think Loud. Think Fluxoura</p>
           <video
-            className="h-72 sm:h-96 md:h-[30rem] rounded-lg w-full object-cover"
+            className="h-full sm:h-96 md:h-full rounded-lg w-full object-cover"
             src="https://www.doorsstudio.com/assets/front/videos/marketing-is-our-jam.mp4"
             autoPlay
             muted
@@ -149,7 +150,8 @@ const Home = () => {
         {/* OUR PORTFOLIO */}
         <div id="work">
           <h2 className="text-3xl md:text-5xl font-bold mb-10 text-center">OUR PORTFOLIO</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <OurWork/>
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <video
               src="https://www.doorsstudio.com/assets/front/videos/brand-strategy.mp4"
               autoPlay
@@ -174,7 +176,7 @@ const Home = () => {
               playsInline
               className="rounded-xl w-full"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 // import { Card, CardContent } from "@/components/ui/card";
 
 const works = [
-    { title: "Hotel Resorts",label:'hotel-resorts', image: "https://picsum.photos/400/300?random=1" },
-    { title: "Product Manipulation",label:'product-manipulation', image: "https://picsum.photos/400/300?random=2" },
-    { title: "Animation",label:'Animation', image: "https://picsum.photos/400/300?random=3" },
-  ];
+  { title: "Hotel Resorts", label: 'hotel-resorts', image: "https://www.doorsstudio.com/assets/front/videos/brand-strategy.mp4" },
+  { title: "Product Manipulation", label: 'product-manipulation', image: "https://www.doorsstudio.com/assets/front/videos/brand-identity.mp4" },
+  { title: "Animation", label: 'Animation', image: "https://www.doorsstudio.com/assets/front/videos/brand-communication.mp4" },
+];
 
 export default function OurWork() {
   return (
@@ -19,8 +19,15 @@ export default function OurWork() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <NavLink to={'/work/'+work.label} className="card overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
-              <img src={work.image} alt={work.title} className="w-full h-48 object-cover" />
+            <NavLink to={'/work/' + work.label} className="card overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition">
+              <video
+                src={work.image}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-xl w-full max-w-md"
+              />
               <div className="p-4 text-center">
                 <h3 className="text-xl font-semibold text-black dark:text-white">{work.title}</h3>
               </div>
