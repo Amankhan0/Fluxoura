@@ -49,7 +49,7 @@ const Contact = () => {
                             href="tel:+1234567890"
                             className="text-themeColor mt-2 block hover:underline"
                         >
-                            +1 234 567 890
+                            +91 92208 92407
                         </a>
                     </motion.div>
 
