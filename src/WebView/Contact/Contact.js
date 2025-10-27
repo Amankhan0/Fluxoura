@@ -34,7 +34,7 @@ const Contact = () => {
                             href="mailto:hello@fluxoura.com"
                             className="text-themeColor mt-2 block hover:underline"
                         >
-                            hello@fluxoura.com
+                            fluxoura.creative@gmail.com
                         </a>
                     </motion.div>
 
@@ -61,7 +61,7 @@ const Contact = () => {
                         <MapPin className="text-themeColor w-10 h-10 mx-auto" />
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-4">Visit Us</h3>
                         <p className="text-gray-600 dark:text-white mt-2">
-                            123 Creative Street, Design City, USA
+                            Dwarka sec 7 New Delhi - 110077
                         </p>
                     </motion.div>
                 </div>
