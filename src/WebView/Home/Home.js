@@ -1,13 +1,17 @@
 import React from "react";
 import VideoScrollAnimation from "./VideoScrollAnimation";
 import OurWork from "../SomeWork/SomeWork";
+import starImg from "./star.gif";
+import laptopImg from "./laptop.gif";
+import laptopSpeakerImg from "./laptopspeaker.gif";
+import menImg from "./men.gif";
 
 const Home = () => {
   return (
     <div className="overflow-hidden dark:bg-black">
       <div className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold my-28 sm:my-32 md:my-44 lg:my-56 px-4">
         <div className="flex text-center flex-wrap items-center justify-center gap-2">
-          <div>*</div>
+          <img className="w-10 h-12 -mt-10" src={starImg}/>
           <p>
             CREATE<span className="text-[#F20574]">.</span> AMPLIFY
             <span className="text-[#FFDE00]">.</span>
@@ -80,14 +84,15 @@ const Home = () => {
             </ul>
           </div>
           <div className="flex justify-center">
-            <video
+            {/* <video
               src="https://www.doorsstudio.com/assets/front/videos/brand-strategy.mp4"
               autoPlay
               muted
               loop
               playsInline
               className="rounded-xl w-full max-w-md"
-            />
+            /> */}
+            <img src={laptopImg} className="rounded-xl w-full max-w-md"/>
           </div>
         </div>
 
@@ -108,14 +113,15 @@ const Home = () => {
             </ul>
           </div>
           <div className="flex justify-center order-1 md:order-2">
-            <video
+            {/* <video
               src="https://www.doorsstudio.com/assets/front/videos/brand-identity.mp4"
               autoPlay
               muted
               loop
               playsInline
               className="rounded-xl w-full max-w-md"
-            />
+            /> */}
+            <img src={menImg} className="rounded-xl w-full max-w-md"/>
           </div>
         </div>
 
@@ -136,14 +142,15 @@ const Home = () => {
             </ul>
           </div>
           <div className="flex justify-center">
-            <video
+            {/* <video
               src="https://www.doorsstudio.com/assets/front/videos/brand-communication.mp4"
               autoPlay
               muted
               loop
               playsInline
               className="rounded-xl w-full max-w-md"
-            />
+            /> */}
+             <img src={laptopSpeakerImg} className="rounded-xl w-full max-w-md"/>
           </div>
         </div>
 
